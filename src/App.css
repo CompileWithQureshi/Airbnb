@@ -35,9 +35,11 @@ section {
   margin-top: 5px;
 }
 .card {
-  max-width: 175px;
+  width: 175px;
+
   font-size: 1rem;
   border: 1px solid black;
+  margin: 3px;
 }
 .card-img {
   width: 100%;
@@ -54,6 +56,6 @@ section {
   font-weight: bold;
 }
 
-.container {
+.holder {
   display: flex;
 }

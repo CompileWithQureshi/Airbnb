@@ -15,10 +15,12 @@ function App(params) {
     <div>
       <Navbar />
       <Hero />
-      <Card img={image_12} no="(6)" contry="USA" qout="Life is hard (test)" price=" $134" /><br />
-      <Card img={mountain} no="(7)" contry="SA" qout="(test2)" price=" $100" />
-      <Card img={wedding} no="(8)" contry="UA" qout="(test3)" price=" $200" />
+      <div className='holder'>
 
+        <Card img={image_12} no="(6)" contry="USA" qout="Life is hard (test)" price=" $134" /><br />
+        <Card img={mountain} no="(7)" contry="SA" qout="(test2)" price=" $100" />
+        <Card img={wedding} no="(8)" contry="UA" qout="(test3)" price=" $200" />
+      </div>
     </div>
   )
 }
