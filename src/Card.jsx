@@ -2,8 +2,9 @@ import React from "react";
 import "./App.css";
 // import image_12 from "./image 12.png";
 
-const Card = ({ img, no, contry, qout, price }) => {
-  console.log({ img, no, contry, qout, price });
+const Card = (props) => {
+  const { img, no, contry, qout, price } = props;
+  console.log(props);
   return (
     <div className="container">
       <div className="card">
