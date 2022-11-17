@@ -17,9 +17,9 @@ function App(params) {
       <Hero />
       <div className='holder'>
 
-        <Card img={image_12} no="(6)" contry="USA" qout="Life is hard (test)" price=" $134" /><br />
-        <Card img={mountain} no="(7)" contry="SA" qout="(test2)" price=" $100" />
-        <Card img={wedding} no="(8)" contry="UA" qout="(test3)" price=" $200" />
+        <Card img={image_12} no={6} contry="USA" qout="Life is hard (test)" price={130} /><br />
+        <Card img={mountain} no={7} contry="SA" qout="(test2)" price={130} />
+        <Card img={wedding} no={8} contry="UA" qout="(test3)" price={130} />
       </div>
     </div>
   )
