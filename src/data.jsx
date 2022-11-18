@@ -33,7 +33,7 @@ export default [
   },
   {
     id: 3,
-    coverImg: "./images/mountain-bike 1.png",
+    coverImg: "./images/wedding-photography 1.png",
     title: "Group Mountain Biking",
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",

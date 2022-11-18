@@ -13,7 +13,15 @@ console.log(Data);
 function App(params) {
   const cards = Data.map(item => {
     return (
-      <Card coverImg={item.coverImg} rating={item.stats.rating} reviewCount={item.stats.reviewCount} location={item.location} qout={item.title} price={item.price} />
+      <Card
+        key={item.id}
+        img={item.coverImg}
+        rating={item.stats.rating}
+        reviewCount={item.stats.reviewCount}
+        location={item.location}
+        title={item.title}
+        price={item.price}
+      />
 
     )
   })
