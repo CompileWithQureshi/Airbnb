@@ -8,15 +8,15 @@ const Card = (props) => {
   return (
     <div className="container">
       <div className="card">
-        <img src={img} alt="img-type" className="card-img" />
+        <img src={`../images/${img}`} alt="img-type" className="card-image" />
         <div className="card-stats">
-          <span>*</span>
+          <span className="card-star">*</span>
           <span className="gray">{reviewCount}</span>
           <span className="gray">{location}</span>
         </div>
-        <p>{qout}</p>
-        <p>
-          <span className="bold">{price}</span>
+        <p className="card--title">{qout}</p>
+        <p className="card--price">
+          <span className="bold">From ${price}</span> / person
         </p>
       </div>
     </div>
