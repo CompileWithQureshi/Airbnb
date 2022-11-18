@@ -3,12 +3,12 @@ import "./App.css";
 // import image_12 from "./image 12.png";
 
 const Card = (props) => {
-  const { img, reviewCount, location, qout, price } = props;
+  const { coverImg, reviewCount, location, qout, price } = props;
   console.log(props);
   return (
     <div className="container">
       <div className="card">
-        <img src={`../images/${img}`} alt="img-type" className="card-image" />
+        <img src={coverImg} alt="img-type" className="card-image" />
         <div className="card-stats">
           <span className="card-star">*</span>
           <span className="gray">{reviewCount}</span>

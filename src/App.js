@@ -3,16 +3,17 @@ import './App.css'
 import Card from './Card';
 import Hero from './Hero';
 import Navbar from './Navbar';
-import data from './data'
+// import data from './data'
+import Data from './data'
 
 // import image_12 from './image 12.png'
 
-console.log(data);
+console.log(Data);
 
 function App(params) {
-  const cards = data.map(item => {
+  const cards = Data.map(item => {
     return (
-      <Card img={item.coverImg} rating={item.stats.rating} reviewCount={item.stats.reviewCount} location={item.location} qout={item.title} price={item.price} />
+      <Card coverImg={item.coverImg} rating={item.stats.rating} reviewCount={item.stats.reviewCount} location={item.location} qout={item.title} price={item.price} />
 
     )
   })
@@ -25,6 +26,7 @@ function App(params) {
       <section className="cards-list">
         {cards}
       </section>
+      {/* <img src=' alt='extra' /> */}
     </div>
   )
 }
