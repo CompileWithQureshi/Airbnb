@@ -21,6 +21,7 @@ function App(params) {
         location={item.location}
         title={item.title}
         price={item.price}
+        openSpots={item.openSpots}
       />
 
     )

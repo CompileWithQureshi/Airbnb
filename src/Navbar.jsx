@@ -5,7 +5,7 @@ import "./App.css";
 export default function Navbar(params) {
   return (
     <nav>
-      <img src={Logo} alt="Airbnb-logo" />
+      <img src={Logo} alt="Airbnb-logo" width="60" />
     </nav>
   );
 }

@@ -3,10 +3,17 @@ import "./App.css";
 // import image_12 from "./image 12.png";
 
 const Card = (props) => {
-  const { img, reviewCount, location, qout, price, rating } = props;
-  console.log(props);
+  const { img, reviewCount, location, qout, price, rating, openSpots } = props;
+  // console.log(openSpots);
+  let badgeText;
+  if (openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (location === "Online") {
+    badgeText = "ONLINE";
+  }
   return (
     <div className="card">
+      {badgeText && <div className="card-badge">{badgeText}</div>}
       <img src={img} alt="img-type" className="card-image" />
       <div className="card-stats">
         <span className="card-star">
