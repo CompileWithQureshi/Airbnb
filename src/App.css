@@ -64,11 +64,15 @@ section {
   display: flex; /* ADD */
   flex-direction: column; /* ADD */
   position: relative;
+  box-shadow: 10px 10px 10px grey;
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  /* padding: 1px; */
 }
 
 .card-image {
   width: 100%;
-  border-radius: 9px;
+  /* border-radius: 9px; */
   margin-bottom: 9px;
 }
 
