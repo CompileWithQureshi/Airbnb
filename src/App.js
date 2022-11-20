@@ -15,7 +15,7 @@ function App(params) {
     return (
       <Card
         key={item.id}
-        item={item}
+        {...item}
       />
 
     )
